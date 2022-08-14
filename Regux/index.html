@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Regex Validation</h1>
+
+<form action="" 
+method="post">
+<div class="main-login-form">
+    <h2>Login After Sign Up</h2>
+    <label for="">Username:</label>
+<input type="text" name="username" placeholder="Enter Your Username" onblur="onbular(this)"><br>
+    <span id="username"></span><br><br>
+    <label for="">Password:</label>
+    <input type="password" name="password" placeholder="Enter Your Password" onblur="onbular(this)" onkeyup="pwchecker(this)"><br>
+    <span id="password"></span>
+</div>
+<div class="main-btn">
+    <button id="login">Login</button>
+    <button type="button" id="sign-up" onclick="singnup()">Sign Up</button>
+</div>
+</form>
+
+
+<div id="main-Sign-form">
+<div class="close">
+<button onclick="hide()">Close</button>
+</div>
+<h2>Form for Sign Up</h2>
+
+<div class="Sign-form">
+<form action="" 
+method="get">
+<input type="text" placeholder="Enter Your Name" onblur="namebular(this)" ><br>
+<span id="name-text"></span><br>
+
+
+<input type="text" placeholder="Enter Your City" onblur="citybular(this)"><br>
+<span id="city-text"></span><br>
+
+<input type="text" id="mobile" placeholder="Enter Your Mobile No" maxlength="10" title="only Number fill" onblur="mobileblur(this)"><br>
+<span id="mobile-text"></span><br>
+
+
+<input type="text" placeholder="Enter Your Email" onblur="emailblur(this)"><br>
+<span id="email-text"></span><br>
+
+
+<input type="text" placeholder="Create Your Username" onblur="userblur(this)" maxlength="10"><br>
+<span id="user-text"></span><br>
+
+<input type="password" placeholder="Create Your Password" onblur="pwchecker2(this)" id="password1"><br>
+<span id="pasword-text1"></span><br>
+
+<input type="password" placeholder="Confirm Password" id="password2" onblur="repassword(this)"><br>
+
+<span id="pasword-text2"></span><br>
+<div class="sumbit-btn">
+<button type="submit" id="submit">Submit</button>
+</div>
+</form>
+</div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
