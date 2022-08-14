@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #758283;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 40px;
+    .time{
+        font-size: 5rem;
+        .txt{
+            font-size: 40px;
+        }
+    }
+    .btns{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+            .btn{
+                padding: 10px 35px;
+                border: none;
+                border-radius: 5px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+            #start{
+                background-color: rgb(42, 148, 0);
+                color: white;
+            }
+            #stop{
+                background-color: rgb(219, 0, 0);
+                color: white;
+            }
+            #reset{
+                background-color: yellow;
+                color: rgb(0, 0, 0);
+            }
+    }
+}

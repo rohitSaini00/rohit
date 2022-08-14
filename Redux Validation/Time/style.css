@@ -1,0 +1,41 @@
+.container{
+    position: absolute;
+text-align: center;
+top: 20%;
+left: 50%;
+transform: translate(-50%,-50%);}
+
+body{
+    background: black;
+}
+
+.container h1{
+    display: block;
+    font-size: 50px;
+    margin-bottom: 20px;
+    animation: text 3s 1; 
+    color: white;
+    cursor: pointer;
+
+}
+.container .abc{
+  font-size: 20px;
+  color: #e97676;
+
+}
+
+@keyframes text{
+    0%{
+    
+        margin-bottom: -40px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -90px;
+    }
+    
+}
+    
+
+    
+

@@ -1,0 +1,200 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+
+h1 {
+  text-align: center;
+  /* margin-top: 200px; */
+}
+.btncolor1 {
+  padding: 8px 12px;
+  background-color: rgb(42, 170, 230);
+  border: none;
+  margin-left: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+.btncolor2 {
+  padding: 8px 12px;
+  background-color: yellow;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.btncolor3 {
+  padding: 8px 12px;
+  background-color: red;
+  border: none;
+  margin-left: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+#addpopup {
+  width: 40%;
+  height: 420px;
+  z-index: 9999;
+  box-shadow: 0px 0px 8px rgb(41, 37, 37);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: honeydew;
+  display: none;
+}
+#addpopup input {
+  /* margin: 10px 10px; */
+  /* padding: 10px 20px; */
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 10px;
+  margin-top: 5px;
+}
+#addpopup label {
+  font-size: 20px;
+  font-weight: 700;
+  color: grey;
+  display: block;
+  text-align: center;
+  padding-top: 15px;
+}
+#addbtn button {
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: green;
+  border: none;
+  color: white;
+  margin-top: 20px;
+}
+#bookMsg {
+  display: block;
+  text-align: center;
+}
+.table1 {
+  margin-top: 10px;
+}
+.addData {
+  display: flex;
+  justify-content: space-between;
+}
+.addData h2 {
+  margin-left: 20px;
+}
+
+.addData button i {
+  color: red;
+  font-size: 30px;
+}
+.addData button {
+  padding: 0px 8px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  margin-right: 20px;
+}
+
+.html-add-btn button {
+  background-color: green;
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 150px;
+}
+
+#modal {
+  width: 30%;
+  height: 300px;
+  box-shadow: 0px 0px 8px rgb(41, 37, 37);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: honeydew;
+  display: none;
+}
+#modal h4 {
+  font-size: 20px;
+}
+#modal i {
+  font-size: 30px;
+  float: right;
+  color: red;
+}
+#modal button {
+  float: right;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.hideModal {
+  display: none;
+}
+
+#UpdatePopup {
+  width: 40%;
+  height: 420px;
+  z-index: 9999;
+  box-shadow: 0px 0px 8px rgb(41, 37, 37);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: honeydew;
+  display: none;
+}
+#UpdatePopup input {
+  /* margin: 10px 10px; */
+  /* padding: 10px 20px; */
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 10px;
+  margin-top: 5px;
+}
+#UpdatePopup label {
+  font-size: 20px;
+  font-weight: 700;
+  color: grey;
+  display: block;
+  text-align: center;
+  padding-top: 15px;
+}
+.serach-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.inputbtn input {
+  padding: 10px 250px;
+  margin: 0px 0px 0px 135px;
+}
+.lablebook{
+  position: relative;
+}
+.book-icons{
+  position: absolute;
+  right: 115px;
+  top: 48px;
+  display: none;
+}
+.book-icons i{
+  font-size: 20px;
+  color: green;
+  font-weight: bold;
+}
+.view_data{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}

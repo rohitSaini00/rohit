@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sir Curd</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet"> -->
+  </head>
+  <body>
+    <h1>Book Data Crud</h1>
+    <div class="serach-btn">
+      <div class="inputbtn">
+        <input
+          type="search"
+          name=""
+          id="serachinput"
+          placeholder="Search The Book"
+        />
+      </div>
+      <div class="html-add-btn">
+        <button id="Addd">Add</button>
+      </div>
+    </div>
+
+    <!-- Add Popap -->
+    <div id="addpopup" class="hideModal">
+      <form onsubmit="return addEmp(this)">
+        <div class="addData">
+          <div class="haiding-btn">
+            <h2>Add Books Data</h2>
+          </div>
+          <button type="button" onclick="hide()">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="lablebook">
+          <label for="name">Book Name:</label>
+          <input
+            type="text"
+            id="BookName"
+            name="Bookname"
+            onblur="onblar(this)"
+          /><span id="Bookname"></span>
+          <div class="book-icons Bookname">
+            <i class="fas fa-check"></i>
+          </div>
+        </div>
+
+        <div class="lablebook">
+          <label for="name">Author:</label>
+          <input
+            type="text"
+            id="Author"
+            name="Authorname"
+            onblur="onblar(this)"
+          />
+          <span id="Authorname"></span>
+          <div class="book-icons Authorname">
+            <i class="fas fa-check"></i>
+          </div>
+        </div>
+
+        <div class="lablebook">
+          <label for="name">Price:</label>
+          <input type="text" id="Price" name="price" onblur="onblar(this)" />
+          <span id="price"></span><br />
+          <div class="book-icons price">
+            <i class="fas fa-check"></i>
+          </div>
+        </div>
+        <br />
+        <div id="addbtn"><button type="submit">Add New Book</button></div>
+      </form>
+    </div>
+
+    <div class="table1 mt-4">
+      <table
+        align="center"
+        width="80%"
+        cellpadding="10px"
+        cellspacing="0px"
+        border="1px"
+      >
+        <thead>
+          <tr>
+            <th scope="col">S.No</th>
+            <th scope="col">Book Name</th>
+            <th scope="col">Author</th>
+            <th scope="col">Price</th>
+            <th scope="col">ACTION</th>
+          </tr>
+
+          <div></div>
+        </thead>
+
+        <tbody id="tableBody"></tbody>
+      </table>
+
+      <p><strong id="EmpMsg"></strong></p>
+    </div>
+
+    <!-- view data html -->
+    <div id="modal" class="hideModal">
+      <button id="viewBtn"><i class="fas fa-times"></i></button>
+
+      <div class="view_data">
+        <span>
+          <h4>Book Name:</h4>
+        </span>
+        <p id="bookTitle2"></p>
+      </div>
+
+      <div class="view_data">
+        <span>
+          <h4>Book Author</h4>
+        </span>
+        <p id="bookAuthor2"></p>
+      </div>
+
+      <div class="view_data">
+        <span>
+          <h4>Price</h4>
+        </span>
+        <p id="bookPrice2"></p>
+      </div>
+    </div>
+
+    <!-- Update Popup -->
+    <div id="UpdatePopup">
+      <form>
+        <div class="addData">
+          <h2>Update Books Data</h2>
+          <button type="button" onclick="hide()">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <label for="name">Book Name:</label>
+        <input type="text" id="book_name" name="Bookname" />
+        <label for="name">Author:</label>
+        <input type="text" id="author2" name="Authorname" />
+        <label for="name">Price:</label>
+        <input type="text" id="Price2" name="price" />
+        <br />
+        <div><button id="updateBtn">Update New Book</button></div>
+      </form>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Video Player Gallery</h1>
+    <div class="main-video">
+      <div class="video-player">
+        <video controls autoplay>
+          <source src="./Video/1.mp4" type="video/mp4" />
+        </video>
+        <h2 class="title">Cartoon Video Series No. 1</h2>
+      </div>
+
+      <div class="video-list">
+        <div class="vid active">
+          <video src="./Video/1.mp4" muted></video>
+          <h3>Cartoon Video Series No :1</h3>
+        </div>
+        <div class="vid">
+          <video src="./Video/2.mp4" muted></video>
+          <h3>Cartoon Video Series No :2</h3>
+        </div>
+        <div class="vid">
+          <video src="./Video/3.mp4" muted></video>
+          <h3>Cartoon Video Series No :3</h3>
+        </div>
+        <div class="vid">
+          <video src="./Video/4.mp4" muted></video>
+          <h3>Cartoon Video Series No :4</h3>
+        </div>
+        <div class="vid">
+          <video src="./Video/14.mp4" muted></video>
+          <h3>Cartoon Video Series No :5</h3>
+        </div>
+        <div class="vid">
+          <video src="./Video/12.mp4" muted></video>
+          <h3>Cartoon Video Series No :6</h3>
+        </div>
+        <div class="vid">
+          <video src="./Video/13.mp4" muted></video>
+          <h3>Cartoon Video Series No :7</h3>
+        </div>
+        <div class="vid">
+          <video src="./Video/8.mp4" muted></video>
+          <h3>Cartoon Video Series No :8</h3>
+        </div>
+        <div class="vid">
+          <video src="./Video/9.mp4" muted></video>
+          <h3>Cartoon Video Series No :9</h3>
+        </div>
+        <div class="vid">
+          <video src="./Video/10.mp4" muted></video>
+          <h3>Cartoon Video Series No :10</h3>
+        </div>
+        <div class="vid">
+          <video src="./Video/11.mp4" muted></video>
+          <h3>Cartoon Video Series No :11</h3>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+
+    <script>
+      let mainVideo = document.querySelector(".video-player video");
+      let title = document.querySelector(".video-player .title");
+      let VideoList = document.querySelectorAll(".video-list .vid");
+      //   console.log(VideoList);
+      VideoList.forEach((video) => {
+        video.onclick = () => {
+          VideoList.forEach((vid) => vid.classList.remove("active"));
+          video.classList.add("active");
+          if (video.classList.contains("active")) {
+            let scr = video.children[0].getAttribute("src");
+            let text = video.children[1].innerHTML;
+            mainVideo.src = scr;
+            title.innerHTML = text;
+          }
+        };
+      });
+    </script>
+  </body>
+</html>

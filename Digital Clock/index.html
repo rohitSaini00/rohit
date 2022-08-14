@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock</title>
+  </head>
+  <style>
+    body {
+      background-color: slategray;
+    }
+
+    h1 {
+      color: red;
+      font-size: 50px;
+    }
+    p {
+      color: rgb(53, 53, 49);
+      font-size: 30px;
+    }
+    .dc {
+      text-align: center;
+    }
+    #mycloack {
+      color: red;
+    }
+    .clock {
+      display: flex;
+      justify-content: center;
+    }
+    #mycloack1 {
+      color: rgb(2, 82, 19);
+      margin: 0px 20px;
+      font-size: 80px;
+    }
+    #mycloack2 {
+      color: rgb(5, 3, 90);
+      margin: 0px 20px;
+      font-size: 80px;
+    }
+    #mycloack3 {
+      color: rgb(83, 3, 63);
+      margin: 0px 20px;
+      font-size: 80px;
+    }
+    #mycloack4 {
+      color: rgb(202, 14, 7);
+      margin: 0px 20px;
+      font-size: 80px;
+    }
+  </style>
+  <body>
+    <div class="dc">
+      <h1>Digital Clock</h1>
+      <div class="clock">
+        <p id="mycloack1">Hours</p>
+        <p id="mycloack2">Minutes</p>
+        <p id="mycloack3">Seconds</p>
+        <p id="mycloack4">AM/PM</p>
+      </div>
+    </div>
+    <script>
+      function dc() {
+        var date = new Date();
+        // console.log(new Date())
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        var seconds = date.getSeconds();
+
+        // Add am pm
+        var ap = "AM";
+
+        if (hours >= 12) ap = "PM";
+
+        //converting 24hrs to 12hrs
+        if (hours > 12) hours = hours - 12;
+
+        //  adding 0 before number
+        if (hours < 10) hours = "0" + hours;
+        if (minutes < 10) minutes = "0" + minutes;
+        if (seconds < 10) seconds = "0" + seconds;
+
+        document.querySelector("#mycloack1").innerHTML = hours + ":";
+        document.querySelector("#mycloack2").innerHTML = minutes + ":";
+        document.querySelector("#mycloack3").innerHTML = seconds + ":";
+        document.querySelector("#mycloack4").innerHTML = ap;
+      }
+
+      setInterval(dc, 1000);
+    </script>
+  </body>
+</html>

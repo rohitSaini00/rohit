@@ -1,0 +1,34 @@
+h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.mainTable{
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px rgb(175, 164, 164);
+    padding-top: 30px;
+} 
+.btn1 button{
+    background-color: blue;
+    padding: 10PX 20PX;
+    color: white;
+    font-size: 20PX;
+    border: none;
+    margin-top: 100px;
+    cursor: pointer;
+}
+.mainTable th{
+    color: rgb(73, 9, 175);
+    font-size: 25px;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.icons i{
+  font-size: 30px;
+}

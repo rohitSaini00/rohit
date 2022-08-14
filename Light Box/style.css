@@ -1,0 +1,50 @@
+.main-img{
+    margin-top: 10px;
+}
+h2{
+    text-align: center;
+}
+.hover-shadow:hover {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.light-box{
+position: absolute;
+width: 100%;
+height: auto;
+background-color: black;
+display: none;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.light-box img{
+margin: 10px auto;
+}
+.small-img{
+display: flex;
+justify-content: space-between;
+}
+.light-img{
+margin-top: 50px;
+border: 1px solid red;
+}
+.light-box button{
+float: right;
+}
+h1{
+color: white;
+text-align: center;
+}
+.big-img img{
+margin: 0 auto;
+display: block;
+}
+
+.big-img button{
+background-color: white;
+color: black;
+padding: 0px 20px;
+border: none;
+font-size: 25px;
+}
+#prev{
+    float: left;
+}

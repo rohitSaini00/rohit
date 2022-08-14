@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Image Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .big-img {
+        position: relative;
+    }
+    .btn button{
+        padding: 5px 25px;
+        border: none;
+        background-color: grey;
+        font-weight: bold;
+    }
+    .btn{
+        display: flex;
+        justify-content: space-between;
+    }
+    .btn button i{
+        font-size: 25px;
+       color:  black;
+    }
+    .p2{
+        font-size: 10px;
+    }
+    .p1{
+        font-size: 22px;
+        color: grey;
+    }
+    .big-img p{
+        font-size: 22px;
+}
+.zoom-box{
+    position: absolute;
+    width: 80%;
+    height: 550px;
+    /* border: 2px solid red; */
+    top: 10px;
+    box-shadow: 0px 0px 10px rgb(182, 159, 159);
+    background-color: white;
+    display: none;
+}
+</style>
+<body>
+<div class="container">
+<div class="row">
+<div class="big-img m-auto col-10 text-center p-3">
+<img src="./0.jpg" alt="" width="80%" height="250px" id="main_img">
+<h1>India Country</h1>
+<p>India, officially the Republic of India (Hindi: Bhārat Gaṇarājya),[23] is a country</p>
+<div class="btn">
+    <button id="prev"><i class="fas fa-arrow-left"></i></button>
+    <button id="next"><i class="fas fa-arrow-right"></i></button>
+</div>
+</div>
+</div>
+<div class="zoom-box">
+<img src="./1.jpg" alt="" width="100%" height="550px"  id="zoom-img">
+</div>
+</div>
+<div class="container">
+        <div class="row">
+            <div class="small-img col-3">
+                <div class="img-data">
+                <img src="./0.jpg" alt="" width="200px" height="150px">
+                <p class="p1">India Country</p>
+                <p class="p2">India, officially the Republic of India (Hindi: Bhārat Gaṇarājya),[23] is a country</p>
+            </div>
+            </div>
+            <div class="small-img col-3">
+                <div class="img-data">
+                <img src="./1.jpg" alt="" width="200px" height="150px">
+                <p class="p1">Poland Country</p>
+                <p class="p2">Poland,[c] officially the Republic of Poland,[d] is a country located in</p>
+            </div>
+            </div>
+            <div class="small-img col-3">
+                <div class="img-data">
+                    <img src="./2.jpg" alt="" width="200px" height="150px">
+                    <p class="p1">Singapore Country</p>
+                    <p class="p2">Singapore (/ˈsɪŋ(ɡ)əpɔːr/ (audio speaker iconlisten)), officially the Republic of Singapore,</p>
+                </div>
+            </div>
+            <div class="small-img col-3">
+                <div class="img-data">
+                    <img src="./3.jpg" alt="" width="200px" height="150px">
+                    <p class="p1">Peris Country</p>
+                    <p class="p2">Periș is a commune in the far northwestern corner of Ilfov County, Muntenia, Romania. The commune is composed of three villages: Bălteni,</p>
+                </div> 
+            </div>
+        </div>
+        <div class="row">
+           <div class="small-img col-3">
+                <div class="img-data">
+                    <img src="./4.jpg" alt="" width="200px" height="150px">
+                    <p class="p1">Canada Country</p>
+                    <p class="p2">Canada is a country in North America. Its ten provinces and three territories extend from the Atlantic to the Pacific and northward into the Arctic Ocean,</p>
+                </div> 
+            </div>
+            <div class="small-img col-3">
+                <div class="img-data">
+                    <img src="./5.jpg" alt="" width="200px" height="150px">
+                    <p class="p1">Thailand Country</p>
+                    <p class="p2">Thailand (Thai: ประเทศไทย),[a] historically known as Siam,[b] officially the Kingdom of Thailand, is a country in Southeast Asia.</p>
+                </div> 
+            </div>
+            <div class="small-img col-3">
+                <div class="img-data">
+                    <img src="./6.jpg" alt="" width="200px" height="150px">
+                    <p class="p1">America Country</p>
+                    <p class="p2">States of America (U.S.A. or USA), commonly known as the United States (U.S. or US) or America, is a country primarily located in North America. It consists</p>
+                </div> 
+            </div>
+            <div class="small-img col-3">
+                <div class="img-data">
+                    <img src="./7.jpg" alt="" width="200px" height="150px">
+                    <p class="p1">Maldeep Country</p>
+                    <p class="p2">Maldives, officially the Republic of Maldives, is an archipelagic country in the Indian subcontinent of Asia, situated in the Indian Ocean. It lies southwest of Sri Lanka and India,</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+           
+            <div class="small-img col-3">
+                <div class="img-data">
+                    <img src="./8.jpg" alt="" width="200px" height="150px">
+                    <p class="p1">Rusain Country</p>
+                    <p class="p2">Russia or the Russian Federation, is a country spanning Eastern Europe and Northern Asia. It is the largest country in the world, covering over 17,125,191 ...</p>
+                </div> 
+            </div>
+            <div class="small-img col-3">
+                <div class="img-data">
+                    <img src="./9.jpg" alt="" width="200px" height="150px">
+                    <p class="p1">Saudi Arab Country</p>
+                    <p class="p2">Reimagine How You Travel & Create New Memories In Saudi Arabia On Your Next Vacation. Immerse Yourself In.</p>
+                </div> 
+            </div>
+            <div class="small-img col-3">
+                <div class="img-data">
+                    <img src="./10.jpg" alt="" width="200px" height="150px">
+                    <p class="p1">Ukren Country</p>
+                    <p class="p2">It is the second-largest country by area in Europe after Russia, which it borders to the east and north-east. ... Ukraine also shares borders with Belarus to the ..</p>
+                </div> 
+            </div>
+            <div class="small-img col-3">
+                <div class="img-data">
+                    <img src="./11.jpg" alt="" width="200px" height="150px">
+                    <p class="p1">Rumaina Country</p>
+                    <p class="p2">Romania (/roʊˈmeɪniə/ (audio speaker iconlisten) ro-MAY-nee-ə; Romanian: România [romɨˈni.a] (audio speaker iconlisten)) is a country at the crossroads of Central, Eastern and Southeastern Europe. It borders Bulgaria to the south,</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(".small-img").find("div").each(function (i, ele){
+        $(ele).on('click', function (){
+            var img1 = $(ele).find('img').attr('src');
+            var para =  $(ele).find(".p1").text();
+            var para2 = $(ele).find(".p2").text();
+          $('#main_img')[0].src = img1;
+          $("h1").text(para);
+          $(".big-img p").text(para2)
+      });
+});
+      count = 0;
+    $("#next").click(function(){
+        count++
+        if(count >11)count = 0
+        $('#main_img')[0].src = "./" + count + ".jpg";
+        var Pelemet = $(".img-data").find(".p1")[count];
+        var Pelemet2 = $(".img-data").find(".p2")[count];
+        finalP = Pelemet.innerText
+        finalP2 = Pelemet2.innerText
+        $("h1").text(finalP);
+        $(".big-img p").text(finalP2)
+       });
+    $("#prev").click(function(){
+        count--
+        if(count < 0)count = 11
+        $('#main_img')[0].src = "./" + count + ".jpg"
+        var Pelemet = $(".img-data").find(".p1")[count]
+        var Pelemet2 = $(".img-data").find(".p2")[count]
+        finalP = Pelemet.innerText
+        finalP2 = Pelemet2.innerText
+       $("h1").text(finalP)
+       $(".big-img p").text(finalP2)
+    });
+});
+
+
+
+    </script>
+</body>
+</html>
